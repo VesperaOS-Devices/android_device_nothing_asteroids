@@ -132,7 +132,11 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 # Kernel Platform (Bazel / Kleaf)
 TARGET_USES_KERNEL_PLATFORM := true
 KERNEL_PREBUILT_DIR := device/nothing/asteroids-kernel
+ifneq ($(wildcard kernel_platform/msm-kernel),)
+TARGET_KERNEL_SOURCE := kernel_platform
+else
 TARGET_KERNEL_SOURCE := kernel/nothing/sm7635
+endif
 TARGET_KERNEL_BAZEL_TARGET := pineapple
 TARGET_KERNEL_BAZEL_VARIANT := gki
 TARGET_KERNEL_PRODUCT := Asteroids
