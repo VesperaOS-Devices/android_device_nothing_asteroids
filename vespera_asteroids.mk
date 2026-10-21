@@ -22,9 +22,14 @@ PRODUCT_NAME := vespera_asteroids
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi_64-user 16 BQ2A.250721.001-BP2A.250605.031.A3 2608101153 release-keys" \
-    BuildFingerprint=Nothing/Asteroids/Asteroids:14/UKQ1.250612.001/2608101153:user/release-keys \
+    BuildDesc="qssi_64-user 16 BQ2A.250721.001-BP2A.250605.031.A3 2609281204 release-keys" \
+    BuildFingerprint=Nothing/Asteroids/Asteroids:14/UKQ1.250612.001/2609281204:user/release-keys \
     DeviceName=Asteroids \
     DeviceProduct=Asteroids \
     SystemDevice=Asteroids \
     SystemName=Asteroids
+
+# Device features
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true

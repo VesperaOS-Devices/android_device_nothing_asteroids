@@ -176,6 +176,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := volcano
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/gesture_mode
+
 # Properties 
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
@@ -193,6 +196,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
 TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
+TARGET_SEPOLICY_DIR := pineapple
 include hardware/nothing/config.mk
 include device/qcom/common/BoardConfigQcom.mk
 

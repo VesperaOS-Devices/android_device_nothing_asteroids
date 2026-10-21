@@ -57,6 +57,8 @@ ro.camera.enableCamera1MaxZsl=1
 ro.camera.disableHeicUltraHDR=true
 
 # Display 
+debug.renderengine.backend=skiaglthreaded
+persist.sys.display_refresh_rates_list=60,120
 ro.vendor.display.normal.maxbacklight=3442
 ro.vendor.display.normal.minbacklight=50
 ro.vendor.display.hbm.maxbacklight=4095
@@ -81,7 +83,7 @@ vendor.display.disable_stc_dimming=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_display_extensions=1
-vendor.display.enable_dpps_dynamic_fps=1
+vendor.display.enable_dpps_dynamic_fps=0
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_ic_hw_roundedcorner=1
@@ -117,6 +119,7 @@ debug.graphics.game_default_frame_rate.disabled=0
 debug.hwui.target_cpu_time_percent=70
 debug.hwui.use_hint_manager=true
 debug.sf.auto_latch_unsignaled=1
+debug.sf.disable_client_composition_cache=0
 debug.sf.early.app.duration=13666666
 debug.sf.early.sf.duration=10500000
 debug.sf.earlyGl.app.duration=13666666
@@ -156,6 +159,7 @@ vendor.gatekeeper.is_security_level_spu=0
 # Media 
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.omx_default_rank=0
+ro.mediaserver.64b.enable=true
 vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true 
 

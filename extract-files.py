@@ -58,6 +58,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/init.qti.kernel.sh': blob_fixup()
+        .regex_replace(r'(?m)^start_msm_irqbalance\n', ''),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
