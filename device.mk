@@ -32,7 +32,7 @@ $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
 
-PRODUCT_RO_FILE_SYSTEM ?= ext4
+PRODUCT_RO_FILE_SYSTEM := erofs
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
