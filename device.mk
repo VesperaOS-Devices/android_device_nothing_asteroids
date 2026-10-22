@@ -5,6 +5,7 @@
 
 # QTI Common Components
 TARGET_BOARD_PLATFORM := volcano
+KERNEL_PREBUILT_DIR := device/nothing/asteroids-kernel
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     alarm \
@@ -18,7 +19,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     gps \
     init \
     media \
-    nfc \
     overlay \
     perf \
     telephony \
