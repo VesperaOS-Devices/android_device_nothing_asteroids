@@ -132,6 +132,7 @@ TARGET_KERNEL_ARCH := arm64
 
 # Kernel Platform (Bazel / Kleaf)
 TARGET_USES_KERNEL_PLATFORM := true
+TARGET_COMPILE_WITH_MSM_KERNEL := false
 KERNEL_PREBUILT_DIR := device/nothing/asteroids-kernel
 ifneq ($(wildcard kernel_platform/msm-kernel),)
 TARGET_KERNEL_SOURCE := kernel_platform
