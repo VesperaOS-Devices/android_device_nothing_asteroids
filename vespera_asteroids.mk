@@ -29,6 +29,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=Asteroids \
     SystemName=Asteroids
 
+# Bootanimation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Device features
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
