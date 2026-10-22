@@ -907,7 +907,6 @@ vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.qti.hardware.display.color-service.rc
 vendor/etc/init/vendor.qti.hardware.lights.service.rc
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
 vendor/lib64/libbacklight-calib.so
 vendor/lib64/libclstc_algorithm_adapter.so
 vendor/lib64/libclstc_gcp_adapter.so
