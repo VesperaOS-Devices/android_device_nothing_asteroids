@@ -254,16 +254,9 @@ PRODUCT_PACKAGES += \
     init.asteroids.hw.rc \
     init.asteroids.nfc.sh \
     init.asteroids.rc \
-    init.class_main.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
     init.qcom.recovery.rc \
-    init.qcom.sh \
     init.target.rc \
-    system_dlkm_modprobe.sh \
-    ueventd.asteroids.rc \
-    ueventd.qcom.rc
+    ueventd.asteroids.rc
 
 # Kernel
  PRODUCT_COPY_FILES += \
@@ -352,7 +345,6 @@ PRODUCT_PACKAGES += \
     SecureElementResTarget_Vendor \
     SettingsResCommon_Vendor \
     SystemUIResCommon_Vendor \
-    TelephonyResCommon_Sys \
     TelephonyResCommon_Vendor \
     UwbResCommon_Vendor \
     WifiResCommonMainline_Vendor \
