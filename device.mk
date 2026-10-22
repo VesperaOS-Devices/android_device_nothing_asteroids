@@ -17,7 +17,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     dsprpcd \
     dlkm \
     gps \
-    init \
     media \
     overlay \
     perf \
